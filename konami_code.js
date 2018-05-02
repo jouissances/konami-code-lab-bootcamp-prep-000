@@ -3,9 +3,9 @@ let i = 0;
 
 function init(e) {
   // Write your JavaScript code inside the init() function
-  const key = parseInt(e.detail || e.which);
-  
   document.body.addEventListener('keydown', function(e) {
+    const key = parseInt(e.detail || e.which);
+    
     if (key === code[i]) {
       i++;
       
